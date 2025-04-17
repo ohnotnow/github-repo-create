@@ -6,6 +6,8 @@
 
 **github-repo-create** (ghrc.sh) is a Bash script designed to streamline the process of creating a new GitHub repository from the current local git project, pushing your code, and generating a professional `README.md` file using OpenAI’s API. It leverages the GitHub CLI (`gh`), `jq`, and automatically selects your main entrypoint file. The README is generated via a local prompt template and contents of your entrypoint file, ensuring the documentation is both accurate and project-specific.
 
+**Note:** This readme was generated using this script!
+
 ---
 
 ## Features
