@@ -15,6 +15,7 @@
 - Creates a public GitHub repository from your current directory.
 - Pushes local code and sets `origin` remote.
 - Automatically generates `README.md` using OpenAI’s language model.
+- Automatically generates a repository description
 - Supports specifying a custom entrypoint file.
 - Enforces environment and tool prerequisites for reliability.
 - Commits and pushes the newly generated README.
@@ -77,6 +78,8 @@ chmod +x ghrc.sh
 5. Uses GitHub CLI to create and push the repo.
 6. Calls OpenAI API to generate `README.md` and commits it.
 7. Pushes the README addition to GitHub.
+8. Optionally copies `$HOME/.ghrc-license` to `LICENSE` and adds that
+9. Creates a description for the repo
 
 ---
 
