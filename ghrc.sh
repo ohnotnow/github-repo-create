@@ -51,7 +51,7 @@ PROMPT_TEMPLATE=$(<"$PROMPT_FILE")
 
 # Read entrypoint contents (escape for JSON)
 ENTRYP_CONTENT=$(sed 's/"/\\"/g; s/$/\\n/' "$ENTRYPOINT" | tr -d '\r')
-MODEL="${OPENAI_MODEL:-gpt-4.1}"
+MODEL="${OPENAI_MODEL:-o4-mini}"
 
 # Construct full prompt
 FULL_PROMPT="$PROMPT_TEMPLATE\n\nRepository URL: $HTML_URL\n\nEntrypoint ($ENTRYPOINT) contents:\n$ENTRYP_CONTENT"
