@@ -5,6 +5,13 @@ set -euo pipefail
 # Usage: ghrc.sh <repo-name> [entrypoint-file]
 # Example: ghrc.sh my-new-repo main.py
 
+if [ $# -eq 0 ]; then
+  echo "No arguments supplied"
+  echo "Usage: $0 <repo-name> [entrypoint-file]"
+  exit 1
+fi
+
+
 if [[ ! -e ".git" ]]; then
     echo "Error: not in a git repository"
     exit 1
